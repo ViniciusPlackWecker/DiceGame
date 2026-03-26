@@ -16,7 +16,6 @@ export default function DiceView({ tipoDado, quantidade }: Props) {
 
     if (intervalRef.current) clearInterval(intervalRef.current);
 
-    // 🎰 anima números
     intervalRef.current = setInterval(() => {
       setDados(Array(quantidade).fill(0).map(
         () => Math.floor(Math.random() * tipoDado) + 1
