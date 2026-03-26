@@ -41,8 +41,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
-
-    // 👇 centraliza em telas grandes (tablet/web)
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -50,15 +48,10 @@ const styles = StyleSheet.create({
   inner: {
     flex: 1,
     width: '100%',
-
-    // 👇 limita largura em telas grandes
     maxWidth: 500,
-
     borderRadius: 30,
     backgroundColor: '#05050A',
     padding: 20,
-
-    // 👇 evita overflow visual
     overflow: 'hidden',
   },
 });
